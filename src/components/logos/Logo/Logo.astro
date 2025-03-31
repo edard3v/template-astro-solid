@@ -1,0 +1,10 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { Icon } from "astro-icon/components";
+
+interface Props extends HTMLAttributes<"svg"> {}
+
+const { class: cls, width, height, ...rest } = Astro.props;
+---
+
+<Icon {...rest} name={"pet"} width={width ?? 35} height={height ?? 35} class:list={["logo", cls]} />

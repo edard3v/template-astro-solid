@@ -1,0 +1,18 @@
+.layout {
+  :root {
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg_main);
+    color: var(--paras);
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    main {
+      max-width: 1920px;
+    }
+  }
+}
