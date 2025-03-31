@@ -8,13 +8,6 @@
 bun update --latest
 ```
 
-- TanStackQuery con:
-
-```
-  bun i -E -D @tanstack/solid-query-devtools
-  bun i -E @tanstack/solid-query @tanstack/query-sync-storage-persister @tanstack/solid-query-persist-client
-```
-
 - Nanostores
 
 ```

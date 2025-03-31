@@ -10,8 +10,14 @@
   },
   "dependencies": {
     "@fontsource-variable/jost": "5.2.5",
+    "@tanstack/query-sync-storage-persister": "5.71.1",
+    "@tanstack/solid-query": "5.71.1",
+    "@tanstack/solid-query-persist-client": "5.71.1",
     "astro": "5.5.5",
     "astro-icon": "1.1.5",
     "keen-slider": "6.8.6"
+  },
+  "devDependencies": {
+    "@tanstack/solid-query-devtools": "5.71.1"
   }
 }
