@@ -20,7 +20,7 @@ const { class: cls, ...rest } = Astro.props;
     transition: background-color 0.7s;
 
     &:hover:not(:disabled) {
-      outline: 3px solid var(--primary);
+      outline: var(--outline);
     }
 
     &:disabled {

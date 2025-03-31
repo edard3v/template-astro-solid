@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout/Layout.astro";
 import { INDEX } from "./config";
-import Btn from "@components/buttons/Btn/Btn.astro";
+import Btn from "@solid/components/buttons/Btn/Btn";
 ---
 
 <Layout title={INDEX.display}>
@@ -12,7 +12,7 @@ import Btn from "@components/buttons/Btn/Btn.astro";
     <h4>¡Hola mundo!</h4>
     <h5>¡Hola mundo!</h5>
     <h6>¡Hola mundo!</h6>
-    <Btn>Enviar</Btn>
+    <Btn client:only="solid-js">Enviar</Btn>
   </main>
 </Layout>
 
