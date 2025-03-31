@@ -1,3 +1,8 @@
+:root {
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
 input,
 textarea {
   padding: 0 var(--md);
