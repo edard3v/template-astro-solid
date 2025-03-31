@@ -50,16 +50,5 @@ p {
 }
 
 a {
-  cursor: pointer;
-  color: var(--blue);
   display: inline-block;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-
-  &:disabled {
-    cursor: not-allowed;
-  }
 }

@@ -1,5 +1,5 @@
-export const capitalize_first_word = (text: string): string => {
-  if (!text) return "";
+export const capitalize_first_word = (txt: string): string => {
+  if (!txt) return "";
 
-  return text.charAt(0).toUpperCase() + text.slice(1);
+  return txt.charAt(0).toUpperCase() + txt.slice(1);
 };

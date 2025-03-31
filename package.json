@@ -9,9 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "5.4.3",
-    "astro-icon": "1.1.5",
     "@fontsource-variable/jost": "5.2.5",
+    "astro": "5.5.5",
+    "astro-icon": "1.1.5",
     "keen-slider": "6.8.6"
   }
 }

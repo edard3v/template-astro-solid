@@ -1,4 +1,4 @@
 :root {
-  --border: 1px solid #151515;
-  --br: 1px solid red;
+  --br: 1px solid var(--lblack);
+  --brr: 1px solid var(--red);
 }

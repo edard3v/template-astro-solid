@@ -15,7 +15,7 @@ const { class: cls, ...rest } = Astro.props;
     padding: var(--md) var(--xl);
     border-radius: var(--md);
     background-color: var(--bg_surf);
-    border: var(--border);
+    border: var(--br);
     color: var(--white);
     transition: background-color 0.7s;
 
@@ -26,7 +26,6 @@ const { class: cls, ...rest } = Astro.props;
     &:disabled {
       background-color: transparent;
       color: var(--grey);
-      cursor: not-allowed;
     }
 
     &:not(:disabled):active {
