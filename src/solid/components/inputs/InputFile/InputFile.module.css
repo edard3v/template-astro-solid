@@ -27,6 +27,6 @@
   }
 }
 
-.wrapper_err {
-  outline: var(--err_outline);
+.wrapper_err:not(:focus-within) {
+  outline: var(--outline_err);
 }

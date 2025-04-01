@@ -6,6 +6,7 @@ import InputTel from "@solid/components/inputs/InputTel/InputTel";
 import InputText from "@solid/components/inputs/InputText/InputText";
 import InputDate from "@solid/components/inputs/InputDate/InputDate";
 import TextArea from "@solid/components/inputs/TextArea/TextArea";
+import InputFile from "@solid/components/inputs/InputFile/InputFile";
 
 export default function Components() {
   return (
@@ -18,6 +19,7 @@ export default function Components() {
         <InputTel />
         <InputDate />
         <TextArea />
+        <InputFile />
       </form>
     </div>
   );

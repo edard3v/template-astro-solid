@@ -8,7 +8,7 @@ export default function InputDate(props: Props) {
 
   return (
     <label class={cls([css.wrapper, p.class])}>
-      <input {...rest} type="date" class={cls([p.err && css.input_err])} title={p.err} />
+      <input {...rest} type="date" class={cls([p.err && css.input_err])} />
       <ErrMsg err={p.err} />
     </label>
   );

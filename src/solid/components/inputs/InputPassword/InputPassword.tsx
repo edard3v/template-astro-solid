@@ -14,7 +14,6 @@ export default function InputPassword(props: Props) {
         type={is_visible() ? "text" : "password"}
         placeholder={p.placeholder ?? "Contraseña"}
         class={cls([p.err && css.input_err])}
-        title={p.err}
       />
       <span class={css.emoji} onClick={() => set_is_visible(!is_visible())}>
         {is_visible() ? "🧐" : "😵"}
