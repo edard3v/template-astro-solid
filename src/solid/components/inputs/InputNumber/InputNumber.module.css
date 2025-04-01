@@ -1,4 +1,5 @@
-.number {
+.wrapper {
+  position: relative;
   display: flex;
   gap: var(--sm);
 

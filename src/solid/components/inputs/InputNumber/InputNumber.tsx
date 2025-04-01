@@ -1,20 +1,21 @@
-import css from "./InputEmail.module.css";
-import { type ComponentProps, splitProps } from "solid-js";
+import css from "./InputNumber.module.css";
+import { splitProps, type ComponentProps } from "solid-js";
 import { cls } from "@utils/cls";
 import ErrMsg from "@solid/components/shared/ErrMsg/ErrMsg";
 
-export default function InputEmail(props: Props) {
+export default function InputNumber(props: Props) {
   const [p, rest] = splitProps(props, ["class", "err", "placeholder"]);
 
   return (
     <label class={cls([css.wrapper, p.class])}>
       <input
         {...rest}
-        type="email"
-        placeholder={p.placeholder ?? "ejemplo@email.com"}
+        type="number"
+        min={0}
         class={cls([p.err && css.input_err])}
+        title={p.err}
+        placeholder={p.placeholder ?? "Número"}
       />
-
       <ErrMsg err={p.err} />
     </label>
   );
