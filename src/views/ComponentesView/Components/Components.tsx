@@ -4,6 +4,7 @@ import InputEmail from "@solid/components/inputs/InputEmail/InputEmail";
 import InputPassword from "@solid/components/inputs/InputPassword/InputPassword";
 import InputTel from "@solid/components/inputs/InputTel/InputTel";
 import InputText from "@solid/components/inputs/InputText/InputText";
+import InputDate from "@solid/components/inputs/InputDate/InputDate";
 
 export default function Components() {
   return (
@@ -14,6 +15,7 @@ export default function Components() {
         <InputEmail />
         <InputPassword />
         <InputTel />
+        <InputDate />
       </form>
     </div>
   );

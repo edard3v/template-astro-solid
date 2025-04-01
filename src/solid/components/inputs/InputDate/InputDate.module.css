@@ -1,7 +1,12 @@
 .wrapper {
   position: relative;
 
-  .input_err {
-    outline: var(--err_outline);
+  .input_err:not(:focus) {
+    outline: var(--outline_err);
   }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%); /* Cambia el color */
+  cursor: pointer;
 }
