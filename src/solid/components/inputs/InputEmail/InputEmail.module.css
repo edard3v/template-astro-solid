@@ -1,0 +1,32 @@
+.wrapper {
+  position: relative;
+
+  .input_err {
+    outline: var(--outline_err);
+  }
+
+  .err {
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+
+    font-size: 0.8rem;
+    color: var(--red);
+    max-width: 100%;
+
+    display: flex;
+    gap: var(--sm);
+    align-items: center;
+
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
