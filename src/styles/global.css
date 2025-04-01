@@ -19,6 +19,16 @@ textarea {
   }
 }
 
+select {
+  padding: 0 var(--md);
+  background-color: var(--bg_surf);
+  border: var(--br);
+  min-height: var(--h_input);
+  min-width: 65px;
+  border-radius: var(--md);
+  color: inherit;
+}
+
 a {
   cursor: pointer;
   color: var(--blue);

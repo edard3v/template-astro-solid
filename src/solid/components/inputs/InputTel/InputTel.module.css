@@ -1,4 +1,5 @@
-.tel {
+.wrapper {
+  position: relative;
   display: flex;
   gap: var(--sm);
 
@@ -16,20 +17,18 @@
   }
 
   .input_err {
-    outline: var(--err_outline);
+    outline: var(--outline_err);
   }
 
   select {
-    padding: 0 var(--md);
-    border: var(--border);
-    min-height: var(--h_input);
-    min-width: 65px;
-    border-radius: var(--md);
-    color: inherit;
     font-size: 1.4rem;
 
     &:focus {
       outline: var(--outline);
     }
+  }
+
+  .err {
+    left: 65px; /* width del select */
   }
 }
