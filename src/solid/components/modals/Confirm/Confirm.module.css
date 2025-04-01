@@ -11,7 +11,7 @@
   border: var(--border);
 
   .wrapper_btns {
-    margin-top: var(--md);
+    margin-top: var(--lg);
     display: flex;
     gap: var(--md);
   }

@@ -52,3 +52,7 @@ p {
 a {
   display: inline-block;
 }
+
+dialog {
+  color: inherit;
+}

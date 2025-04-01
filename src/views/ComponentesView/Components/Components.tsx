@@ -8,8 +8,21 @@ import InputDate from "@solid/components/inputs/InputDate/InputDate";
 import TextArea from "@solid/components/inputs/TextArea/TextArea";
 import InputFile from "@solid/components/inputs/InputFile/InputFile";
 import Btn from "@solid/components/buttons/Btn/Btn";
+import Alert from "@solid/components/modals/Alert/Alert";
+import { dom } from "@utils/dom/dom";
+import Confirm from "@solid/components/modals/Confirm/Confirm";
 
 export default function Components() {
+  const handle_alert = () => {
+    const alert = dom.select("comp_alert") as HTMLDialogElement;
+    alert.showModal();
+  };
+
+  const handle_confirm = () => {
+    const alert = dom.select("comp_confirm") as HTMLDialogElement;
+    alert.showModal();
+  };
+
   return (
     <div class={css.wrapper}>
       <form class={css.form} onsubmit={(e) => e.preventDefault()}>
@@ -23,6 +36,12 @@ export default function Components() {
         <InputFile />
         <Btn>Enviar</Btn>
       </form>
+
+      <Btn onclick={handle_alert}>Abrir Alert</Btn>
+      <Alert id="comp_alert" />
+
+      <Btn onclick={handle_confirm}>Abrir Confirm</Btn>
+      <Confirm id="comp_confirm" />
     </div>
   );
 }
