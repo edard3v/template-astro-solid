@@ -43,7 +43,7 @@ export function create_form<T = Inputs>(schema: ZodSchema, options: Options<T>) 
     ref: (el: HTMLFormElement) => (form_ref = el),
     inputs,
     errors,
-    is_valid: is_valid,
+    is_valid,
     validate,
     success,
     reset,
