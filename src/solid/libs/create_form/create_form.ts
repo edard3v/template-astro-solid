@@ -42,7 +42,7 @@ export function create_form<T = Inputs>(schema: ZodSchema, options: Options<T>) 
   const reset = () => form_ref?.reset();
 
   const update = () => {
-    if (!has_first_submit) return;
+    if (!has_first_submit()) return;
     validate();
   };
 
